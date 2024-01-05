@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE-ege">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Marcus Tran Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50d6d395f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="pictures/logo.png" class="logo">
+            <ul>
+                <li><a href="#header" onclick="scrollToSection('header')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#hobbies" onclick="scrollToSection('hobbies')">Hobbies</a></li>
+                <li><a href="#portfolio" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hey, I'm <span>Marcus</span><br>from VA.</h1>
+        </div>
+    </div>
+</div>
+<!--THIS IS THE ABOUT ME SECTION-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/halloween.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>blah blah this is describing me.lah blah this is describing me.
+                    lah blah this is describing me.lah blah this is describing me.
+                    lah blah this is describing me.lah blah this is describing me.
+                    lah blah this is describing me.lah blah this is describing me.
+                </p>
+                <div class="tabs">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('organizations')">Organizations</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS/JS</span><br>I like to practice making websites.</li>
+                        <li><span>Java</span><br>I am proficient with java.</li>
+                        <li><span>C</span><br>I am learning more everyday.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br>Briar Woods High School</li>
+                        <li><span>2022 - Current</span><br>James Madison University</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2023</span><br>Server at All American Steakhouse</li>
+                        <li><span>2022 - 2023</span><br>Curators discord bot development</li>
+                        <li><span>2023 - Current</span><br>Beta Theta Pi Philanthropy Chair</li>
+                        <li><span>2024 - 2025</span><br>Hopefully an Internship.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="organizations">
+                    <ul>
+                        <li><span>Beta Theta Pi</span><br>Fraternity</li>
+                        <li><span>Vietnamese Student Association</span><br>Club</li>
+                        <div class="org-pics">
+                            <div class="orgs">
+                                <img src="pictures/IMG_5135.jpeg" alt="VSA">
+                                <img src="pictures/Screen_Shot_2022-09-17_at_4.44.03_PM.png" alt="Beta">
+                                <img src="pictures/IMG_9022.JPG" alt="Beta">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HOBBIES SECTION-->
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>Lifting</h2>
+                <p>I like to lift weights.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-hiking"></i>
+                <h2>Hiking</h2>
+                <p>I like to hike in my free time.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-skiing"></i>
+                <h2>Skiing</h2>
+                <p>I want to start skiing more.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PORTFOLIO SECTION-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/madzip.png">
+                <div class="layer">
+                    <h3>MadZip</h3>
+                    <p>Used huffman encoding to zip files in java.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/y86.png">
+                <div class="layer">
+                    <h3>Y86 CPU Architecture Simulator</h3>
+                    <p>Simulated the architecture of a computer in Y86 using C.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/trigger.png">
+                <div class="layer">
+                    <h3>Color based Triggerbot</h3>
+                    <p>A program that would click your mouse once a color was detected.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="button">See more</a>
+</div>
+<!--CONTACT INFORMATION-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>mtdukes5@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>571-233-1825</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/marcus-tran-771631280/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mtrain5"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        <!--    <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                
+            </div>
+            -->
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made by Marcus Tran 2024</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+</body>
+</html>
